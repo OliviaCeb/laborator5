@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Pagina web despre animare" />
+  <meta name="keywords" content="HTML, pagină web, laborator, structură, animare, formatare, tabele" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Cebanu Olivia" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <title align="center">Animatii</title>
+  <style>
+    /* Stilizare generală */
+    table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+    img {
+            display: block;
+        }
+        .bordered {
+            border: 4px solid black;
+            margin: auto; } 
+     img {
+    max-width: 500px;
+    height: auto;
+        }
+  </style>
+</head>
+<body>
+  <h1>Animatii si diverse structuri</h1>
+  
+  <!-- Sarcina 1: Imagini -->
+ 
+  <div class="images-container">
+    <img src="Imagini/img1.jpg" alt="Imagine 1" title="Aceasta este imaginea 1" width="300" height="300">
+    <img src="Imagini/img2.jpg" alt="Imagine 2" title="Aceasta este imaginea 2" width="300" height="300">
+  </div>
+  
+    <div>
+      <img src="Imagini/img3.jpg" alt="Imaginea 3" title="Aceasta este imaginea 3" class="bordered" width="300" height="300">
+  </div>
+  <hr><br>
+  <!-- Sarcina 2: Tabel cu imagini -->
+   
+  <table>
+    <tr align="center">
+        <th colspan="5">Date despre copiii colaboratorilor</th>
+    </tr>
+    <tr valign="top">
+            <th>Nume,prenume</th>
+            <th>Adresa fizică</th>
+            <th>Număr copii minori</th>
+            <th> Prenume copil şi anul de naștere</th>
+            <th>Poza copil</th>
+    </tr>
+    <tr valign="top">
+        <td rowspan="2">Ivanov Elena </td>
+        <td rowspan="2">Str. Codrilor 45, ap.56 </td>
+        <td rowspan="2">2</td>
+        <td>Elena,2006</td>
+        <td align="center">
+            <a href="detalii_copil1.html" target="_blank">
+                <img src="Imagini/f1.jpg" alt="Elena" title="Elena" style="border: 1px solid #ccc;" width="50%" height="50%">
+            </a></td>
+    </tr>
+    <tr valign="top">
+        <td>Valeriu, 2011</td>
+        <td align="center">
+            <a href="detalii_copil2.html" target="_blank">
+                <img src="Imagini/b1.jpg" alt="Valeriu" title="Valeriu" style="border: 1px solid #ccc;" width="50%" height="50%">
+            </a></td>
+    </tr>
+    <tr valign="top">
+    <td rowspan="3">Mihailov Marta</td>
+    <td rowspan="3">Str. Puskin 10, ap.45 </td>
+    <td rowspan="3">3</td>
+    <td>Ion, 2008</td>        
+    <td align="center"><a href="detalii_copil3.html" target="_blank">
+        <img src="Imagini/b2.jpg" alt="Ion" title="Ion" style="border: 1px solid #ccc;" width="50%" height="50%"></a></td></tr>
+    <tr valign="top">
+        <td>Ecaterina, 2010</td>
+        <td align="center"><a href="detalii_copil4.html" target="_blank">
+                <img src="Imagini/f2.jpg" alt="Ecaterina" title="Ecaterina" style="border: 1px solid #ccc;" width="50%" height="50%"></a> </td></tr>
+    <tr valign="top">
+        <td>Valentin, 2011</td>
+        <td align="center"><a href="detalii_copil5.html" target="_blank">
+                <img src="Imagini/b3.jpg" alt="Valentin" title="Valentin" style="border: 1px solid #ccc;" width="50%" height="50%"></a></td></tr>   
+    <tr valign="top">
+        <td>Cliucnicov Magdalena</td>
+        <td>Str. Nucilor 34, ap. 22</td>
+        <td>1</td>
+        <td>Mariuta, 2012</td>
+        <td align="center"><a href="detalii_copil6.html" target="_blank">
+                <img src="Imagini/f3.jpg" alt="Mariuța" title="Mariuța" style="border: 1px solid #ccc;" width="50%" height="50%"></a></td></tr>
+    <tr align="left">
+        <th colspan="2">Total numar copii</th>
+        <td colspan="3">6</td>
+    </tr>
+</table>
+<br><br>
+  <!-- Sarcina 3: Imagine hartă -->
+  <div>
+    <img src="Imagini/mickey.jpg" alt="Harta interactivă" width="1280px" height="813px" usemap="#map">
+    <map name="map">
+      <area alt=""title="Minnie Mouse" href="https://en.wikipedia.org/wiki/Minnie_Mouse" coords="65, 100, 200, 225" shape="rect" target="_blank">
+      <area alt=""title="Mickey Mouse" href="https://en.wikipedia.org/wiki/Mickey_Mouse" coords="475,115,115" shape="circle" target="_blank">
+      <area alt=""title="Mickey & Minnie" href="https://mickey.disney.com/" coords="30,100,180,200,20,80" shape="poly" target="_blank">
+    </map>
+  </div>
+<!-- Sarcina 4: Formular -->
+  <div class="form-container">
+  <form>
+    <fieldset>
+      <legend><b>Date personale</b></legend>
+      <table>
+          <tr>
+              <td><label for="name">*Numele:</label></td>
+              <td><input type="text" name="name" id="name" required></td>
+          </tr>
+          <tr>
+              <td><label for="prenume">*Prenume:</label></td>
+              <td><input type="text" name="prenume" id="prenume" required></td>
+          </tr>
+          <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" name="email" id="email"></td>
+          </tr>
+          <tr>
+              <td><label for="date">*Data de naștere:</label></td>
+              <td><input type="date" name="date" id="date" required></td>
+          </tr>
+          <tr>
+              <td><label>Sexul:</label></td>
+              <td>
+                  <input type="radio" name="gender" value="male" required> <b>M</b>
+                  <input type="radio" name="gender" value="female"> <b>F</b>
+              </td>
+          </tr>
+          <tr>
+              <td><label for="tel">Telefonul:</label></td>
+              <td><input type="tel" name="phone" pattern="0[0-9]{2}-[0-9]{3}-[0-9]{3}"></td>
+          </tr>
+      </table>
+  </fieldset>
+
+      <fieldset>
+          <legend><b>Date despre produs</b></legend>
+          <table>
+              <tr>
+                  <td><label for="produs">*Denumirea produsului:</label></td>
+                  <td><input type="text" name="produs" id="produs" required></td>
+              </tr>
+              <tr>
+                  <td><label for="producator">*Producătorul:</label></td>
+                  <td><input type="text" name="producator" id="producator" required></td>
+              </tr>
+              <tr>
+                  <td><label for="cantitate">*Cantitatea:</label></td>
+                  <td><input type="number" name="cantitate" id="cantitate" required></td>
+              </tr>
+          </table>
+      </fieldset>
+
+      <fieldset>
+          <legend><b>Plată</b></legend>
+          <table>
+              <tr>
+                  <td><label>Tipul cardului:</label></td>
+                  <td>
+                      <input type="radio" name="card" value="visa" required> <b>Visa</b><br>
+                      <input type="radio" name="card" value="mastercard" required> <b>MasterCard</b>
+                  </td>
+              </tr>
+              <tr>
+                  <td><label for="nr_card">*Numărul cardului:</label></td>
+                  <td><input type="text" name="nr_card" id="nr_card" required></td>
+              </tr>
+              <tr>
+                  <td><label for="expira">*Expira:</label></td>
+                  <td><input type="date" name="expira" id="expira" required></td>
+          </table>
+      </fieldset>
+  
+  <label for="text">*Campul trebuie sa fie completat</label>
+  <!-- Butoanele la final -->
+  <div><input type="submit" value="Trimite">
+    <input type="reset" value="Anulează"></div> </div></form> 
+
+  <!-- Sarcina 5: Iframe pentru hartă -->
+  <iframe 
+ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.0714521753566!2d28.82051077619546!3d47.01920247114201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c2d03e2c6b1%3A0xd8e8b74ac8c3ef7b!2sUniversitatea%20de%20Stat%20din%20Moldova!5e0!3m2!1sro!2s!4v1732031730070!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <!-- Sarcina 6: Audio și Video -->
+  <div class="media-container">
+  <audio class="audio-player" controls>
+    <source src="Audio/Lady Gaga.mp3" type="audio/mp3"></audio><br>
+    <audio class="audio-player" controls><source src="Audio/Lady Gaga.ogg" type="audio/ogg">
+    </audio>
+
+    <video class="video-player" controls width="320" height="240">
+    <source src="Video/Chisinau.mp4" type="video/mp4"></video><br>
+    <video class="video-player" controls width="320" height="240"><source src="Video/Chisinau.webm" type="video/webm">
+  </video></div>
+  <a href="#" class="play-button">Redă Audio</a>
+
+  <footer>
+    <p>Mai multe informații <a href="#"><a href="detalii_media.html" target="_blank">aici</a></a>.</p>
+  </footer>
+
+  <!-- Sarcina 7: Animații -->
+  <h1>Exemplu de Animații și Tranziții</h1>
+
+  <!-- Gradiente aplicate pe un element -->
+  <div class="gradient-background"></div>
+
+  <!-- Cerc cu gradient radial și animație la hover -->
+  <div class="circle"></div>
+
+  <!-- Buton cu tranziție pe culoare și transformare -->
+  <a href="#" class="btn">Butonul meu</a>
+
+  <!-- Elemente cu animații -->
+  <div class="animation-one"></div>
+  <div class="animation-two"></div>
+</body>
+</html>
